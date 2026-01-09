@@ -85,3 +85,13 @@ body{
     background: #ff6f91;
 }
 
+.todos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#task-list{
+    width: 100%;
+}
+
