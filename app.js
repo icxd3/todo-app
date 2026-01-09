@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const addTask = (event) => {
         event.preventDefault();
-        const taskText = taskInput.ariaValueMax.trim();
+        const taskText = taskInput.value.trim();
         if(!taskText) {
             return;
         }
