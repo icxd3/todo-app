@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskInput = document.getElementById('task-input');
     const addTaskBtn = document.getElementById('add-task-btn');
     const taskList = document.getElementById('task-list');
+    const todosContainer = document.querySelector('.todos-container');
+
+    const toggleEmptyState = () => {
+        todosContainer.style.width = taskList.children.length > 0 ? '100%' : 'auto';
+    };
 
     const addTask = (event) => {
         event.preventDefault();
